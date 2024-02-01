@@ -4,4 +4,6 @@
 
 
 class Rectangle:
+    '''A class that calculates the rectangle
+    '''
     pass
