@@ -2,3 +2,5 @@
 
 def lookup(obj):
     return (dir(lookup))
+
+print(dir(lookup))
