@@ -2,6 +2,7 @@
 '''A module
 '''
 
+
 def lookup(obj):
     '''A funtion
     '''
