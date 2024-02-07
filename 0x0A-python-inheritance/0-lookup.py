@@ -1,6 +1,8 @@
 #!/usr/bin/python3
+'''A module
+'''
 
 def lookup(obj):
-    return (dir(lookup))
-
-print(dir(lookup))
+    '''A funtion
+    '''
+    return (dir(obj))
