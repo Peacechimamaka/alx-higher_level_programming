@@ -6,6 +6,7 @@
 class Base:
     '''A class base
     '''
+
     __nb_objects = 0
 
     def __init__(self, id=None):
@@ -17,7 +18,9 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+
 class Rectangle(Base):
+
     '''A sub_class module
     '''
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -45,12 +48,15 @@ class Rectangle(Base):
     @property
     def width(self):
         return self.__width
+
     @property
     def height(self):
         return self.__height
+
     @property
     def x(self):
         return self.__x
+
     @property
     def y(self):
         return self.__y
@@ -78,7 +84,7 @@ class Rectangle(Base):
         if type(value) is int:
             self__x = value
         else:
-             raise TypeError('x must be an integer')
+            raise TypeError('x must be an integer')
         if value < 0:
             raise ValueError('x must be >= 0')
 
@@ -87,6 +93,6 @@ class Rectangle(Base):
         if type(value) is int:
             self__y = value
         else:
-             raise TypeError('y must be an integer')
+            raise TypeError('y must be an integer')
         if value < 0:
             raise ValueError('y must be >= 0')
