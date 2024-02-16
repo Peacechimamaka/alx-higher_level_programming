@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-from models.base import Base
-
 '''contains a class rectangle that inherits from base
 '''
+from models.base import Base
 
 
 class Rectangle(Base):
