@@ -67,14 +67,13 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, value):
-        if value < 0:
-            raise ValueError('x must be >= 0')
-
         if type(value) is int:
             self.__x = value
         else:
             raise TypeError('x must be an integer')
-        
+        if value < 0:
+            raise ValueError('x must be >= 0')
+
     @y.setter
     def y(self, value):
         if value < 0:
