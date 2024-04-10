@@ -2,12 +2,10 @@
 
 const proc = process.argv;
 
-if (proc.length < 3){
+if (proc.length < 3) {
   console.log('No arguement');
-}
-else if ( proc.length === 3){
+} else if (proc.length === 3) {
   console.log('Arguement found');
-}
-else{
+} else {
   console.log('Arguements found');
 }
