@@ -1,16 +1,10 @@
 #!/usr/bin/node
 
-function add(a, b) {
-let result;
-const proc = process.argv;
-a = parseInt(proc[2]);
-b = parseInt(proc[3]);
-console.log(a);
-if (isNaN(a) ||  isNaN(b)){
-  console.log(NaN);
-} else {
-  result = a + b;
-  console.log(result);
+function add (a, b) {
+  return (a + b);
 }
-}
-add(a, b);
+
+const first = Number(process.argv[2]);
+const second = Number(process.argv[3]);
+
+console.log(add(first, second));
