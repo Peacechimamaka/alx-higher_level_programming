@@ -1,10 +1,9 @@
 #!/usr/bin/node
 
-const proc = process.argv;
-const checked = parseInt(proc[2]);
+const proc = process.argv[2];
 
-if (isNaN(checked)) {
-  console.log('Not a Number');
+if (Number(proc)) {
+  console.log(`My number: ${Number(proc)}`);
 } else {
-  console.log('My number: ' + checked);
+	console.log('Not a number')
 }

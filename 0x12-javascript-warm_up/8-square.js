@@ -2,15 +2,13 @@
 
 const proc = process.argv;
 const checked = parseInt(proc[2]);
-let x, y;
 
 if (isNaN(checked)) {
-  console.log('Missing size');
+	console.log('Missing size');
 } else {
-  for (x = 0; x < checked; x++) {
-    console.log('X');
-  for (y = 0; y < checked-1; y++) {
-      console.log('X');
-  }
-  }
+	let count = checked;
+	while(count > 0) {
+		console.log('X'.repeat(checked))
+		count--;
+	}
 }
